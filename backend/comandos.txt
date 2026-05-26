@@ -1,0 +1,4 @@
+docker build -t backend .
+docker run -d --name backend --link db -p 8080:8080 backend
+
+broser: http://localhost:8080/swagger-ui/index.html

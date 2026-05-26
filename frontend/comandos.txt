@@ -1,0 +1,2 @@
+docker build -t frontend .
+docker run -d --name frontend --link backend -p 80:80 frontend
